@@ -11,7 +11,7 @@ import org.json.JSONObject;
 public class EmailService {
 
     private static final String BREVO_URL = "https://api.brevo.com/v3/smtp/email";
-    private static final String API_KEY = "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";
+    private static final String API_KEY = "";
     private static final String SENDER_EMAIL = "jihedlouini@gmail.com";
     private static final String SENDER_NAME = "Restaurant Manager";
 
