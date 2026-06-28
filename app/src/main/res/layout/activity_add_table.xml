@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0D1B2A"
+    android:padding="24dp">
+
+    <TextView
+        android:id="@+id/tvAddTableTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add New Table"
+        android:textColor="#F4A732"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilTableNumber"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:hint="Table Number"
+        android:textColorHint="#A0AEC0"
+        app:boxStrokeColor="#F4A732"
+        app:hintTextColor="#F4A732"
+        app:layout_constraintTop_toBottomOf="@id/tvAddTableTitle">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etTableNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:textColor="#F5F5F5" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilCapacity"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="Capacity (Persons)"
+        android:textColorHint="#A0AEC0"
+        app:boxStrokeColor="#F4A732"
+        app:hintTextColor="#F4A732"
+        app:layout_constraintTop_toBottomOf="@id/tilTableNumber">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etCapacity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:textColor="#F5F5F5" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnSaveTable"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginTop="32dp"
+        android:text="Save Table"
+        android:textAllCaps="false"
+        android:textColor="#0D1B2A"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:backgroundTint="#F4A732"
+        app:cornerRadius="16dp"
+        app:layout_constraintTop_toBottomOf="@id/tilCapacity" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

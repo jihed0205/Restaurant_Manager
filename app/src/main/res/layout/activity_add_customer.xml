@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0D1B2A"
+    android:padding="24dp">
+
+    <TextView
+        android:id="@+id/tvAddCustomerTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Customer"
+        android:textColor="#F4A732"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilCustName"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:hint="Full Name"
+        android:textColorHint="#A0AEC0"
+        app:boxStrokeColor="#F4A732"
+        app:hintTextColor="#F4A732"
+        app:layout_constraintTop_toBottomOf="@id/tvAddCustomerTitle">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etCustName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#F5F5F5" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilCustPhone"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="Phone Number"
+        android:textColorHint="#A0AEC0"
+        app:boxStrokeColor="#F4A732"
+        app:hintTextColor="#F4A732"
+        app:layout_constraintTop_toBottomOf="@id/tilCustName">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etCustPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:textColor="#F5F5F5" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilCustEmail"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="Email (Optional)"
+        android:textColorHint="#A0AEC0"
+        app:boxStrokeColor="#F4A732"
+        app:hintTextColor="#F4A732"
+        app:layout_constraintTop_toBottomOf="@id/tilCustPhone">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etCustEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:textColor="#F5F5F5" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnSaveCustomer"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginTop="32dp"
+        android:text="Register Customer"
+        android:textAllCaps="false"
+        android:textColor="#0D1B2A"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:backgroundTint="#F4A732"
+        app:cornerRadius="16dp"
+        app:layout_constraintTop_toBottomOf="@id/tilCustEmail" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

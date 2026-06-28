@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0D1B2A">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create Promotion"
+            android:textColor="#F4A732"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:hint="Promotion Title"
+            android:textColorHint="#A0AEC0"
+            app:boxStrokeColor="#F4A732"
+            app:hintTextColor="#F4A732">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etPromoTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#F5F5F5" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="Promo Code (e.g. SAVE20)"
+            android:textColorHint="#A0AEC0"
+            app:boxStrokeColor="#F4A732"
+            app:hintTextColor="#F4A732">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etPromoCode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textCapCharacters"
+                android:textColor="#F5F5F5" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Discount Type"
+            android:textColor="#A0AEC0"
+            android:textSize="12sp" />
+
+        <Spinner
+            android:id="@+id/spinnerDiscountType"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bg_search_bar"
+            android:paddingHorizontal="16dp"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="Discount Value"
+            android:textColorHint="#A0AEC0"
+            app:boxStrokeColor="#F4A732"
+            app:hintTextColor="#F4A732">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etDiscountValue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:textColor="#F5F5F5" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="Min Order Value ($)"
+            android:textColorHint="#A0AEC0"
+            app:boxStrokeColor="#F4A732"
+            app:hintTextColor="#F4A732">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etMinOrder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:textColor="#F5F5F5" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnPickExpiry"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="24dp"
+            android:text="Select Expiry Date"
+            android:textColor="#F4A732"
+            app:strokeColor="#F4A732" />
+
+        <com.google.android.material.checkbox.MaterialCheckBox
+            android:id="@+id/cbPromoActive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:checked="true"
+            android:text="Promotion Active"
+            android:textColor="#F5F5F5"
+            app:buttonTint="#F4A732" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnSavePromotion"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="24dp"
+            android:text="Save Promotion"
+            android:textAllCaps="false"
+            android:textColor="#0D1B2A"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:backgroundTint="#F4A732"
+            app:cornerRadius="16dp" />
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

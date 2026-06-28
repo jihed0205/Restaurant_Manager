@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Premium Dark Theme Palette -->
+    <color name="colorPrimary">#F4A732</color> <!-- Warm Amber -->
+    <color name="colorSecondary">#E07B2A</color>
+    <color name="colorBackground">#0D1B2A</color> <!-- Deep Navy -->
+    <color name="colorSurface">#1B2A3B</color>
+    <color name="colorOnPrimary">#0D1B2A</color>
+    <color name="colorOnBackground">#F5F5F5</color>
+    <color name="colorTextSecondary">#A0AEC0</color>
+
+    <!-- Redundant names for compatibility -->
+    <color name="primaryColor">#F4A732</color>
+    <color name="secondaryColor">#E07B2A</color>
+    <color name="backgroundColor">#0D1B2A</color>
+</resources>

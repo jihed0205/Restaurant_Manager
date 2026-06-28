@@ -1,0 +1,47 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.RestaurantApp" parent="Theme.Material3.Dark.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorOnPrimary">@color/colorOnPrimary</item>
+
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/colorSecondary</item>
+        <item name="colorOnSecondary">@color/white</item>
+
+        <!-- UI Surface and Background -->
+        <item name="android:colorBackground">@color/colorBackground</item>
+        <item name="android:windowBackground">@color/colorBackground</item>
+        <item name="colorSurface">@color/colorSurface</item>
+        <item name="colorOnSurface">@color/colorOnBackground</item>
+
+        <!-- Global Text Colors -->
+        <item name="android:textColorPrimary">@color/colorOnBackground</item>
+        <item name="android:textColorSecondary">@color/colorTextSecondary</item>
+        <item name="android:textColorHint">@color/colorTextSecondary</item>
+
+        <!-- Global Shape Appearance -->
+        <item name="shapeAppearanceSmallComponent">@style/ShapeAppearance.RestaurantApp.Small</item>
+        <item name="shapeAppearanceMediumComponent">@style/ShapeAppearance.RestaurantApp.Medium</item>
+        <item name="shapeAppearanceLargeComponent">@style/ShapeAppearance.RestaurantApp.Large</item>
+
+        <!-- Components -->
+        <item name="bottomNavigationStyle">@style/Widget.Material3.BottomNavigationView</item>
+
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">false</item>
+    </style>
+
+    <style name="Theme.RestaurantApp" parent="Base.Theme.RestaurantApp" />
+
+    <!-- Custom Shapes -->
+    <style name="ShapeAppearance.RestaurantApp.Small" parent="ShapeAppearance.Material3.SmallComponent">
+        <item name="cornerSize">20dp</item>
+    </style>
+    <style name="ShapeAppearance.RestaurantApp.Medium" parent="ShapeAppearance.Material3.MediumComponent">
+        <item name="cornerSize">20dp</item>
+    </style>
+    <style name="ShapeAppearance.RestaurantApp.Large" parent="ShapeAppearance.Material3.LargeComponent">
+        <item name="cornerSize">20dp</item>
+    </style>
+</resources>
